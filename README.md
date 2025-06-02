@@ -32,6 +32,11 @@ JAVASCRIPT(VANILLA)
 
 Screenshots
 
+![Screenshot 2025-06-01 190205](https://github.com/user-attachments/assets/33b33fa5-1963-4a96-93fd-509639b94aa8)
+
+![Screenshot 2025-06-01 190123](https://github.com/user-attachments/assets/e48677ce-159c-46c3-940a-0198c3565165)
+
+
 
 
 

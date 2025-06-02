@@ -22,8 +22,9 @@ body {
     padding: 50px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgb(39, 39, 39);
-    max-width: 500px;
-    width: 100%;
+    max-width: 600px;
+    width: 90%;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -40,6 +41,12 @@ header h1 {
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+}
+#task-input, #add-btn, .edit-input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 input#input-box {
@@ -72,11 +79,16 @@ input#input-box {
     
 }
 #filters{
-    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 .filter-btn {
+    flex: 1 1 auto;
     border: none;
-    background: linear-gradient(100deg, #06d5f5, #128071);
+    background-color: cyan;
     border-radius: 10px;
     margin-right: 10px;
     padding: 5px 10px;
@@ -90,17 +102,19 @@ input#input-box {
     color: #fff;
 }
 .task-item {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 10px;
+    padding: 10px;
     background-color: #f8f8f8;
-    margin: 6px 0;
+    margin-bottom: 8px;
     border-radius: 6px;
-    list-style: none;
+    word-break: break-word;
 }
 .task-item span {
     flex-grow: 1;
+    margin-right: 10px;
 }
 .completed {
     text-decoration: line-through;

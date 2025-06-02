@@ -19,7 +19,8 @@ body {
 
 .container {
     background-color: white;
-    padding: 50px;
+    margin: auto;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgb(39, 39, 39);
     max-width: 600px;
@@ -42,13 +43,17 @@ header h1 {
     padding-left: 20px;
     margin-bottom: 25px;
 }
-#task-input, #add-btn, .edit-input {
-    width: 100%;
+#task-input, #add-btn{
+    width: 65%;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
     font-size: 16px;
 }
-
+#task-input{
+    width: 65%;
+    margin-right: 5px;
+}
 input#input-box {
     flex: 1;
     border: none;
@@ -60,6 +65,7 @@ input#input-box {
 #add-button {
     border: none;
     outline: none;
+    width: 30%;
     padding: 16px 50px;
     background: #0aa38f;
     color: white;
@@ -67,23 +73,18 @@ input#input-box {
     cursor: pointer;
     border-radius: 40px;
 }
-@media(max-width:600px) {
-.container{
-    width: 90%;
-    padding: 20px;
-}
+
 #filters, #search-container {
     flex-direction: column;
     gap: 10px;
 }
     
-}
 #filters{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .filter-btn {
     flex: 1 1 auto;
@@ -91,6 +92,7 @@ input#input-box {
     background-color: cyan;
     border-radius: 10px;
     margin-right: 10px;
+    max-width: 150px;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -108,6 +110,7 @@ input#input-box {
     justify-content: space-between;
     padding: 10px;
     background-color: #f8f8f8;
+    margin-top: 10px;
     margin-bottom: 8px;
     border-radius: 6px;
     word-break: break-word;
@@ -173,4 +176,26 @@ input#input-box {
 #search-container input {
     border-radius: 40px;
    
+}
+
+@media(max-width:480px) {
+#task-input,#add-btn{
+    width: 100%;
+    margin: 5px 0;
+}
+#filters {
+flex-direction: column;
+align-items: stretch;
+}
+#filter-btn{
+    width: 100%;
+}
+.task-item{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.task-item button {
+    width: 100%;
+    margin: 5px 0 0 0;
+}
 }

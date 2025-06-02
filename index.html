@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= "container">
+        <header>
+            <h1>TaskMaster pro</h1>
+        </header>
+
+        <section class="row">
+            <input type="text" id="input-box"  aria-label= "Enter a new task" placeholder="Enter a new task" autofocus>
+            <button id="add-button">Add</button>
+        </section>
+
+        <div id="filters" align="center">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <ul id="list-container">
+
+        </ul>
+         <div id="search-container">
+            <input type="text" id="search-input" placeholder="search tasks...."/>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
